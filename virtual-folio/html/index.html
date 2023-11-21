@@ -31,6 +31,33 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/topbar.virtual.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    /* Ensure images are responsive */
+    .img-place img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* This removes any default inline spacing */
+    }
+
+    /* Media Query for devices with width up to 768px (typical breakpoint for mobile devices) */
+    @media (max-width: 768px) {
+      .img-place {
+        /* Your specific styles for mobile devices go here */
+      }
+
+      /* Example: Adjust the padding and margin for items on mobile */
+      .col-md-6, .col-lg-4, .col-xl-3 {
+        padding: 0;
+        margin-bottom: 15px;
+      }
+
+      /* Further mobile-specific styles can be added here */
+    }
+
+    /* Additional styles for Bootstrap classes if needed */
+    /* ... */
+  </style>
 </head>
 
   
@@ -139,13 +166,11 @@
             </div>
           </div>
         </div>
-        <div class="grid-item template wireframes wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/polipo.png" data-fancybox data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
-            <img src="../assets/img/work/polipo.png" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Web policia </h5>
-              <p>Policia</p>
-            </div>
+        <div class="img-place" data-src="../assets/img/work/polipo.png" data-fancybox data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
+          <img src="../assets/img/work/polipo.png" alt="">
+          <div class="img-caption">
+            <h5 class="fg-theme">Web policia </h5>
+            <p>Policia</p>
           </div>
         </div>
         <div class="grid-item apps ios wow zoomIn">
